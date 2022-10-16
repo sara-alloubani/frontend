@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+body
+{
+    margin: 0;
+    height: 100vh;
+
+
+}
+.main
+{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    border :2px solid rgb(200, 46, 4);
+
+
+
+}
+.dashboard
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(85, 177, 181);
+    min-height: 60vh;
+    padding: 20px;
+    gap: 10px;
+    border :2px solid rgb(0, 0, 0);
+
+
+}
+
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+    border :1px solid rgb(109, 88, 30);
+    padding: 20px;
+    gap: 10px;
+}
+.col
+{
+    width: 200px;
+    border: 1px solid rgb(233, 17, 57);
+    min-height: 70px;
+    gap: 20px;
+}
+.flex-col
+{
+    display: flex;
+    flex-wrap: wrap;
+    border :1px solid rgb(20, 103, 107);
+    min-width: 200px;
+    padding: 20px;
+    gap: 10px;
+
+}
+
+.flex-row
+{
+display: flex;
+flex-direction: row;
+    width: 150px;
+    border: 1px solid rgb(12, 15, 192);
+    min-height: 70px;
+    
+}
+
+.flex-row > .col
+{
+    width: 150px;
+        
+}

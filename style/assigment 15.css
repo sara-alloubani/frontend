@@ -1,0 +1,15 @@
+p.p1:hover
+{background-color: red;}
+
+
+p.p2:hover
+{background-color: blue;}
+
+
+@media(min-width:400px)
+{
+   p{
+    background-color: lightgray;
+
+   }
+}

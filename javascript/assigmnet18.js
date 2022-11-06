@@ -67,10 +67,10 @@ console.log(getlargest(array))*/
 function uppercase(y)
 {
     let z=[];
-   let f= y.split(" ");
-    for(let i=0;i<y.length;i++)
+    let f= y.split(" ");
+    console.log(f);
+    for(let i=0;i<f.length;i++)
     {
-        //z[i]=f[i].charAt(0).toUpperCase()+;
         z.push(f[i].charAt(0).toUpperCase() +f[i].slice(1));
     }
     let s= z.join(" ");
@@ -79,9 +79,6 @@ function uppercase(y)
 }
 
 console.log(uppercase("hussam start new javacript"));
-
-
-
 
 
 */
@@ -109,7 +106,7 @@ console.log(longstWord("hussam start new javacript"));
 
 /*
 
-let array=[12,-15,-16,19,20,40,50,54,100];
+let array=[12,-15,-16,19,20,40,50,54,100,-2,-3];
 function pAndN(string)
 {
     let positiveArray=[];
@@ -118,31 +115,33 @@ function pAndN(string)
     {
         if(array[i]>=0){positiveArray.push(array[i]);}
          else{negativeArray.push(array[i])}
-        
-
     }
     console.log("positiveArray "+positiveArray);
     console.log("negativeArray"+ negativeArray);
 
-let first=positiveArray[0];
-    for(let i=1;positiveArray.length;i++)
+
+    let first=positiveArray[0];
+    for(let i=1;i<positiveArray.length;i++)
     {
-        if(first>positiveArray[i])
+        if(first<positiveArray[i])
         first=positiveArray[i];
     }
-    console.log("largest positive number"+first);
+    console.log("largest positive number "+first);
+    
 
-
-let f=negativeArray[0];
-    for(let i=1;negativeArray.length;i++)
+    let neganumber=negativeArray[0];
+    console.log(neganumber);
+    for(let i=1;i<negativeArray.length;i++)
     {
-        if(f<negativeArray[i])
-        f=negativeArray[i];
+        if(neganumber<negativeArray[i])
+        neganumber=negativeArray[i];
     }
-    console.log("largest negative number"+f);
+    console.log("largest negative number "+neganumber);
 }
 
-console.log(pAndN(array));
+
+
+pAndN(array);
 
 
 

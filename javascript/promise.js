@@ -20,13 +20,18 @@ function fetchuser(callback)
 
 
 
-fetchuser((error,users)=>{
-    if (error)
-    {
-        console.log(error);
-        return;
-    }
 
-    let user2=users[1];
-    console.log(user2);
-})
+
+let btn=document.getElementById("btn");
+btn.addEventListener("click",()=>{
+    fetchuser((error,users)=>{
+        if (error)
+        {
+            console.log(error);
+            return;
+        }
+    
+        console.log(users);
+    })
+});
+
